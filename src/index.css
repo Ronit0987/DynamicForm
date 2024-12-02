@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center;    /* Vertically center the content */
+  height: 100vh;          /* Make the body full viewport height */
+  background-color: #f0f0f0; /* Light background for better visibility */
+}
+
+.dynamic-form-container {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #ffffff; /* Ensure the form has a white background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Align text to the center */
+}
+
+header h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.form-selector {
+  margin-bottom: 20px;
+}
+
+.form-field {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input {
+  background-color: #fff; /* Ensure white background for inputs */
+  color: #333; /* Darker text color */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #eee;
+  margin: 20px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: blue;
+  transition: width 0.3s ease;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.submitted-data {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
+option{
+  color: 007bff;
+}
+input{
+  color: black;
+}

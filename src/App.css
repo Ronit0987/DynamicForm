@@ -1,0 +1,191 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.dynamic-form-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  
+}
+
+/* Form selector */
+.form-selector {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-selector label {
+  font-weight: bold;
+}
+
+.form-selector select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f4f4f9;
+}
+
+/* Dynamic form */
+.dynamic-form .form-field {
+  margin-bottom: 15px;
+}
+
+.dynamic-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.dynamic-form input,
+.dynamic-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f9f9f9;
+  font-size: 1rem;
+}
+
+.dynamic-form input:focus,
+.dynamic-form select:focus {
+  outline: none;
+  border-color: #2575fc;
+}
+
+.error-message {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Progress bar */
+.progress-bar {
+  height: 10px;
+  background: #eee;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 5px;
+  transition: width 0.3s;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #5e0dbb, #1b6ae6);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Submitted data */
+.submitted-data {
+  margin-top: 30px;
+}
+
+.submitted-data h2 {
+  margin-bottom: 15px;
+}
+
+.submitted-data table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.submitted-data table th,
+.submitted-data table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.submitted-data table th {
+  background: #2575fc;
+  color: white;
+}
+
+.submitted-data table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.submitted-data table tr:hover {
+  background: #f1f1f1;
+}
+
+.submitted-data button {
+  margin: 0 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  background: #f4f4f9;
+  color: #666;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .form-selector {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-selector label {
+    margin-bottom: 10px;
+  }
+
+  .form-selector select {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
